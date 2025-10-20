@@ -27,15 +27,44 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Small custom styles for product info (español) -->
+  <style>
+    .product_section .img-box { position: relative; display: inline-block; width: 220px; margin: 10px; vertical-align: top; }
+    .product_section .img-box img { width: 100%; height: auto; display: block; border-radius: 6px; }
+    .product_section .product_details {
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      background: rgba(255,255,255,0.95);
+      padding: 8px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      font-family: 'Poppins', sans-serif;
+      text-align: left;
+    }
+    .product_section .product_details h3 { margin: 0 0 4px 0; font-size: 15px; color: #222; }
+    .product_section .product_details p { margin: 0 0 6px 0; font-size: 13px; color: #555; }
+    .product_section .product_details .price { font-weight: 700; color: #111; font-size: 14px; }
+    .product_section .product_details .meta { font-size: 12px; color: #777; }
+    /* Responsive tweak: apila en pantallas pequeñas */
+    @media (max-width: 576px) {
+      .product_section .img-box { width: calc(50% - 20px); }
+    }
+    @media (max-width: 360px) {
+      .product_section .img-box { width: 100%; }
+    }
+  </style>
 </head>
 
-<body class="sub_page">
-  <div class="hero_area">
+<body class="sub_page"></body>
+  <div class="hero_area"></div>
     <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
+    <header class="header_section"></header>
+      <div class="container-fluid"></div>
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3"></nav>
+          <a class="navbar-brand" href="index.html"></a>
             <img src="images/logo.png" alt="" />
             <span>
               Medi
@@ -75,39 +104,55 @@
   </div>
   <!-- end hero area -->
 
-
-
   <!-- product section -->
   <section class="product_section layout_padding">
     <div class="d-flex justify-content-center">
       <h2 class="custom_heading">
-        Our Products
+        Skin Care
       </h2>
     </div>
     <div class="container layout_padding2">
       <div class="img-box box-1">
         <img src="images/p-1.jpg" alt="">
+        <div class="product_details">
+          <h3>Crema Hidratante Facial</h3>
+          <p>Hidratación profunda, fórmula ligera para todo tipo de piel. Mejora elasticidad y confort diario.</p>
+          <div class="meta"><span class="price">$25.00</span> — 50 ml</div>
+        </div>
       </div>
       <div class="img-box box-2">
         <img src="images/p-2.jpg" alt="">
+        <div class="product_details">
+          <h3>Serum Revitalizante</h3>
+          <p>Con vitamina C y ácido hialurónico. Aporta luminosidad y reduce líneas finas.</p>
+          <div class="meta"><span class="price">$35.00</span> — 30 ml</div>
+        </div>
       </div>
       <div class="img-box box-3">
         <img src="images/p-3.jpg" alt="">
+        <div class="product_details">
+          <h3>Limpieza Facial Profunda</h3>
+          <p>Servicio profesional: limpieza, extracción y mascarilla personalizada. Ideal para piel congestionada.</p>
+          <div class="meta"><span class="price">$40.00</span> — 45 min (servicio)</div>
+        </div>
       </div>
       <div class="img-box box-4">
         <img src="images/p-4.jpg" alt="">
+        <div class="product_details">
+          <h3>Set Cuidado Diario</h3>
+          <p>Limpiador + tónico + crema hidratante. Rutina completa para mantener la piel saludable.</p>
+          <div class="meta"><span class="price">$60.00</span> — kit</div>
+        </div>
       </div>
     </div>
     <div class="d-flex justify-content-center">
       <a href="">
-        See More
+        Ver más
       </a>
     </div>
   </section>
 
-
   <!-- end product section -->
-
 
   <!-- info section -->
   <section class="info_section layout_padding">
